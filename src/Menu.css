@@ -1,0 +1,11 @@
+.Menu {
+    background-color: white;
+    border: black solid 10px;
+    text-align: center;
+    list-style-type: square;
+}
+
+.Menu-title {
+    text-decoration: underline;
+    font-family: 'Brush Script MT', cursive;
+}

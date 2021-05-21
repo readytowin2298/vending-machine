@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
 import VendingMachine from './VendingMachine';
 import Menu from './Menu';
+import Food from './Food'
+import items from './items'
 
 function App() {
   return (
@@ -14,6 +16,11 @@ function App() {
             <Route exact path="/menu">
                 <Menu />
             </Route>
+            {items.map(item => (
+              <Route exact path={`/${item.name}`}>
+                <Food name={item.name} price={item.price} />
+              </Route>
+            ))}
         </BrowserRouter>
     </div>
   );

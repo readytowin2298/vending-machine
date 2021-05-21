@@ -11,7 +11,7 @@ function Menu(){
             <ul className="list-group">
                 {items.map(item => (
                     <li key={item.id}>
-                        <Link className="list-group-item" to={item.name}>{item.name} : {item.price}</Link>
+                        <Link className="list-group-item" to={`/${item.name}`}>{item.name} : {item.price}</Link>
                     </li>
                 ))}
             </ul>

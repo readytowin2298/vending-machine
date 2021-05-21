@@ -16,7 +16,7 @@ const items = [
         id : 13
     },
     {
-        name : "soda",
+        name : "Soda",
         price : 1.00,
         img : sodaImage,
         id : 14

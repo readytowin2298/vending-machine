@@ -7,11 +7,11 @@ function Menu(){
     return (
         <div className="Menu">
             <Link to="/">Back to the Vending Machine</Link>
-            <h4 className="display-4 Menu-title">Menu</h4>
+            <h4 className="display-4 Menu Menu-title">Menu</h4>
             <ul className="list-group">
                 {items.map(item => (
                     <li key={item.id}>
-                        <Link className="list-group-item" to={`/${item.name}`}>{item.name} : {item.price}</Link>
+                        <Link className="list-group-item" to={`/food/${item.name}`}>{item.name} : {item.price}</Link>
                     </li>
                 ))}
             </ul>

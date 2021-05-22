@@ -25,7 +25,7 @@ function App() {
         <h1 className="display-1">World's Best Vending Machine</h1>
         <BrowserRouter>
             <Route exact path="/">
-                <VendingMachine />
+                <VendingMachine cart={cart} setCart={setCart} />
             </Route>
             <Route exact path="/menu">
                 <Menu />

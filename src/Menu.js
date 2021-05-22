@@ -6,7 +6,7 @@ import items from './items';
 function Menu(){
     return (
         <div className="Menu">
-            <Link to="/">Back to the Vending Machine</Link>
+            <Link to="/" className="btn btn-primary">Back to the Vending Machine</Link>
             <h4 className="display-4 Menu Menu-title">Menu</h4>
             <ul className="list-group">
                 {items.map(item => (
